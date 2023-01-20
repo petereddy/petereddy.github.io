@@ -5,7 +5,7 @@ date:   2023-01-17 13:17:00 -0500
 categories: 
 ---
 
-I've recently moved to a new location in Boston and as a result have
+Boy Oh, I've recently moved to a new location in Boston and as a result have
 been forced to choose a new ISP because my previous ISP
 [Starry](https://starry.com) was, sadly, not offered at the new
 location.
