@@ -2,7 +2,7 @@
 layout: single
 title:  "Some Boston ISPs Reviewed"
 date:   2023-01-17 13:17:00 -0500
-categories: 
+categories: boston ISP
 ---
 
 Boy Oh, I've recently moved to a new location in Boston and as a result have
