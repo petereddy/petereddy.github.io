@@ -44,9 +44,58 @@ author:
       #url: "https://www.reddit.com/user/mauro_mograph"
     
     
-include: ["_pages"]
+#include: ["_pages"]
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - server
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - node_modules
+  - package.json
+  - package-lock.json
+  - Rakefile
+  - README
+  - tmp
+  - /docs # ignore Minimal Mistakes /docs
+  - /test # ignore Minimal Mistakes /test
+keep_files:
+  - .git
+  - .svn
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 defaults:
+  - scope:
+      path: "assets/images"
+    values:
+      image: true
   # _pages
   - scope:
       path: ""
@@ -60,8 +109,12 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: false
+      author_profile: true
       show_date: true
+      read_time: true
+      comments: # true
+      share: true
+      related: true
   # _now_archive
   - scope:
       path: ""
@@ -72,21 +125,71 @@ defaults:
       share: true
       show_date: false
       
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+
+# HTML Compression
+# - https://jch.penibelst.de/
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
+
+# Outputting
+permalink: /:categories/:title/
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
+timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+# mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+
+category_archive:
+  type: liquid
+  path: /categories/
+
+tag_archive:
+  type: liquid
+  path: /tags/
+
 # Collections
 collections:
   now:
     output: true
     permalink: /:collection/:path/
 
-category_archive:
-  type: liquid
-  path: /categories/
-
 footer:
   links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
     - label: "Mastodon"
       icon: "fab fa-mastodon"
-      url: "https://mograph.social/@mauro"
+      #url: "https://mograph.social/@mauro"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
