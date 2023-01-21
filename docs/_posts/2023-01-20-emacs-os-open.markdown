@@ -32,17 +32,20 @@ Here it is:
 ```lisp
 (defun os-open (arg)
   "Open the current file or directory with the OS's perferred
-application. With a prefix argument (C-n), open the file's
-containing directory instead."
+application. With a prefix argument (C-n), always open the
+containing directory."
   (interactive "P")
+  (message (concat "default-directory " default-directory))
   (when-let (path (or
-                    (and arg default-directory)
-                    (dired-get-filename nil t)
-                    (buffer-file-name
-                      (window-buffer
-                        (minibuffer-selected-window)))
-                    default-directory))
-    (start-process "open" nil "open" path)))
+                   (and arg (or
+                             default-directory
+                             (dired-current-directory)))
+                   (dired-get-filename nil t)
+                   (buffer-file-name
+                    (window-buffer
+                     (minibuffer-selected-window)))
+                   default-directory))
+    (shell-command (concat "open" " " path))))
 
 (global-set-key (kbd "C-s-o") 'os-open)
 ```
@@ -60,12 +63,15 @@ file I was editing, I also wanted the option to open the directory
 that contained that file. So the first input to `(or)` is:
 
 ```lisp
-(and arg default-directory)
+(and arg (or
+           default-directory
+           (dired-current-directory)))
 ```
 
 The `(and)` form returns the last value it evaluates, so in this case
-it returns the file's containing directory if a prefix argument is
-specified (i.e. is non-nil) when the function is invoked, e.g:
+it returns the file or dired's (depending upon the buffer type)
+containing directory if a prefix argument is specified (i.e. is
+non-nil) when the function is invoked, e.g:
 
 ```
 C-n C-s-o
