@@ -5,7 +5,9 @@ date:   2023-01-20 00:00:00 -0500
 categories: books
 ---
 
-![Book Cover](/assets/images/the-end-of-the-world-is-just-the-beginning-cover.png){:width="360px"}
+{:refdef: style="float: left; padding: 0 20px 20px 0;"}
+![Book Cover](/assets/images/the-end-of-the-world-is-just-the-beginning-cover.png){:width="280px"}
+{:refdef}
 
 I picked up this book recently because I had seen it praised by
 several people on sites I frequent where I've had good luck with book

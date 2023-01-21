@@ -1,5 +1,5 @@
-title: "Festina Lente"
-subtitle: "Make haste, slowly"
+title: "et cetera"
+subtitle: ""
 email: peter@petereddy.com
 description: >- # this means to ignore newlines until "baseurl:"
   Stuff I think about, mostly harmless
@@ -42,7 +42,10 @@ author:
     - label: "Reddit"
       icon: "fab fa-reddit"
       #url: "https://www.reddit.com/user/mauro_mograph"
-    
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/petereddy"
+      
     
 #include: ["_pages"]
 
