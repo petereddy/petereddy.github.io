@@ -35,7 +35,6 @@ Here it is:
 application. With a prefix argument (C-n), always open the
 containing directory."
   (interactive "P")
-  (message (concat "default-directory " default-directory))
   (when-let (path (or
                    (and arg (or
                              default-directory
