@@ -21,6 +21,8 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-seo-tag
+  - jekyll-archives
 
 # Site Author
 author:
