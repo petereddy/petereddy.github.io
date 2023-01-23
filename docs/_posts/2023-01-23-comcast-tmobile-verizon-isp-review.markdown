@@ -238,9 +238,9 @@ appreciate to see in a router.
 |--------------------|:-------:|:-------:|:--------:|
 | Dynamic DNS        |         | ✅      |          |
 | UPnP               | ✅      | ✅      |          |
-| Port Forwarding    | 📝      | ✅      |          |
+| Port Forwarding    | ✅      | ✅      |          |
 | Port Triggering    | ✅      | ✅      |          |
-| DMZ Host           | 📝      | ✅      |          |
+| DMZ Host           | ✅      | ✅      |          |
 | SIP ALG            |         | ✅      |          |
 | Static NAT         |         | ✅      |          |
 | Device Static IP   | ✅      | ✅      |          |
