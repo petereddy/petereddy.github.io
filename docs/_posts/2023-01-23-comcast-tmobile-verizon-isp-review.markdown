@@ -5,8 +5,8 @@ date:   2023-01-17 13:17:00 -0500
 categories: [boston, ISP, comcast, tmobile, verizon]
 ---
 
-A recent move to a new place in the city of Boston has forced me to
-find a new ISP. Sadly, service from my previous, and well liked, ISP
+A recent move to a new place has forced me to find a new ISP. Sadly,
+service from my previous, and well liked, ISP
 [Starry](https://starry.com) was not offered at the new location.
 
 So in this review I'll be looking at the three options that are
