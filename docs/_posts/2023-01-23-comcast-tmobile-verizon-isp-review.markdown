@@ -77,7 +77,7 @@ price is good only for two years, after which it more than doubles. I
 can't remember what the actual price will be, probably around
 $100/mo. which is really expensive for this level of service. I could
 dig around on their site to find the post-intro price but I can't be
-arsed becuase where that information is located is not at all obvious
+arsed because where that information is located is not at all obvious
 and I'm sure it'll be higher when the time comes anyway.
 
 As far as Verizon, I haven't been charged yet as I'm in their free
