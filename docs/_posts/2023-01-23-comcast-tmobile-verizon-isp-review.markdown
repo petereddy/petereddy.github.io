@@ -10,8 +10,8 @@ previous, and well liked, ISP [Starry](https://starry.com) was not
 offered at the new location.
 
 So in this review I'll be looking at the three options that are
-available to me in the new location at the time of writing. Listed in
-the order in which I've installed them, they are:
+currently available to me in the new location. Listed in the order in
+which I've installed them, they are:
 
 ### Comcast/Xfinity Cable
 
@@ -103,13 +103,13 @@ window pane.
 {:refdef}
 
 I assume the purpose of this is to ensure that it won't easily be
-moved resulting in a connection disruption. I dislike the idea of
-gluing things to windows, especially to living room windows, which
-happen to be the only windows I have. Happily, gluing doesn't seem to
-have been necessary. The router reports an excellent signal strength
-with the antenna just sitting on a small table near the window,
-dutifully facing it's big brother on the Verizon lamp post plinth
-across the street.
+moved and cause a connection disruption. I dislike the idea of gluing
+things to windows, especially to living room windows, which happen to
+be the only windows I have. Happily, gluing doesn't seem to have been
+necessary. The router reports an excellent signal strength with the
+antenna just sitting on a small table near the window, dutifully
+facing it's big brother on the Verizon lamp post plinth across the
+street.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kF_L7onVIo8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -207,21 +207,19 @@ place it next to multiple devices that you want to plug in and so
 avoid having to use an external Ethernet switch. One oddity I noticed
 with the fourth Ethernet configuration in Comcast's web UI:
 
+![Comcast Port 4 Config](/assets/images/isp-review/comcast-ethernet-port-4-config.png)
+
+So associating this port to my home network will remove it from my
+home network? It's an intriguing option which I have not yet
+investigated.
+
 Verizon offers an 10GE port and two additional 100 Mbps ports. I'm not
 sure what MoCA is intended to be used for but I believe/hope it's the
 normal MoCA method of extending the reach of the router via existing
 coax wiring. If true, then that's a great feature and one I'd probably
-make use of if I stick with this router. The network configuration for
-this does warn, "Important: Only advanced technical users should use
-this feature."
-
-One strange message on the Verizon Ethernet port four configuration:
-
-![Comcast Port 4 Config](/assets/images/isp-review/comcast-ethernet-port-4-config.png)
-
-I see, so associating this port to my home network will remove it from
-my home network? It's an intriguing option which I will have to
-investigate some time.
+make use of if I stick with that service. The network configuration
+for this feature warns, "Important: Only advanced technical users
+should use this feature."
 
 ### Nerd Knobs
 
@@ -251,9 +249,9 @@ appreciate to see in a router.
 | Network Objects    |         | ✅      |          |
 | WiFi 6             |         | ✅      |          |
 
-First of all, yes that's right, T-Mobile offers no
+Yes you're reading that right. T-Mobile offers no
 configurability. They generously allow setting your own SSID,
-password, frequency band, encryption type and that's it. I didn't
+password, frequency band and encryption type but that's it. I didn't
 include any of that in the table above because that all a given
 today. Worse, it's necessary to make these settings through their iOS
 or Android mobile app
@@ -275,14 +273,11 @@ advanced section.
 
 ![T-Mobile Configuration](/assets/images/isp-review/t-mobile-app-advanced-settings.png)
 
-That's all there is for T-Mobile configuration.
-
-As you can see from the table above, Verizon shines in the
-configuration category. They have a nice and extensive Web UI for
-configuring just about everything except for switching to bridge
-mode. It's possible bridge mode is there but I couldn't find it. They
-have an option called "Network Objects" which I don't completely
-understand yet but which looks interesting.
+Verizon shines in the configuration category. They have a nice and
+extensive Web UI for configuring just about everything except for
+switching to bridge mode. It's possible bridge mode is there but I
+couldn't find it. They have an option called "Network Objects" which I
+don't completely understand yet but which looks interesting.
 
 Comcast's configuration is decent and honestly I'd be ok with it.
 
