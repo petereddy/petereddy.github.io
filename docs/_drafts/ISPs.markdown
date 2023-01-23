@@ -79,8 +79,8 @@ arsed becuase where that information is located is not at all obvious
 and I'm sure it'll be higher when the time comes anyway.
 
 As far as Verizon, I haven't been charged yet as I'm in their free
-first month trial period. Given that it's a phone company though, I
-expect plenty of inscrutable extra fees tacked on to the bill.
+first month trial period. Given that it's a phone company I expect
+plenty of inscrutable extra fees tacked on to the bill.
 
 # Setup
 
@@ -89,8 +89,8 @@ systems. It's all pretty standard and easy. Verizon, though, wants you
 to glue their receiver to your window, apparently so it's as close as
 possible to their transceiver outside on the street. I really didn't
 want to do that and it turns out I didn't have to as it reports an
-excellent signal strength despite it just sitting on a small table
-near the window.
+excellent signal strength despite just sitting on a small table near
+the window.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kF_L7onVIo8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -98,17 +98,12 @@ Watching Verizon's "easy" installation video above, I couldn't help
 wondering at times if it was an SNL skit of an overly complicated
 "easy" setup.
 
-### Reliability
-
-Frogs
-: Bird and cow
-: Make birds great again
-
 ### Bandwidth
 
-I tested upload and download speeds over a period of about one week
-and at different, random, times during each day, though mostly during
-business hours since that is the time I was mostly concerned about.
+I tested upload and download speeds over a period of about one week,
+sampling at different, random, times (i.e. when I remembered to do it)
+during each day, though mostly during business hours since that is the
+time I was mostly concerned about.
 
 For the test I used the built-in macOS command `networkQuality` with
 the default parmaters. That meant that the test measured upload and
@@ -137,6 +132,8 @@ never outright failed.
 
 ![Average Upload Speed](/assets/images/isp-review/average-upload-speeds.png)
 
+
+
 ### Connectivity
 
 | Feature            | Comcast | Verizon | T-Mobile |
@@ -144,18 +141,28 @@ never outright failed.
 | LAN Ethernet Ports | 4       | 3       | 2        |
 | 2.4 Ghz            | ✅      | ✅      | ✅       |
 | 5 Ghz              | ✅      | ✅      | ✅       |
-| 6 Ghz              | ✅      |         |          |
-| MOCA               |         |         |          |
+| 6 Ghz              |         | ✅      |          |
+| MoCA               |         | ✅      |          |
 
 Comcast offers the most Ethernet ports, which is nice when you can
 place it next to multiple devices that you want to plug in and so
 avoid having to use an external Ethernet switch. One oddity I noticed
 with the fourth Ethernet configuration in Comcast's web UI:
 
+Verizon offers an 10GE port and two additional 100 Mbps ports. I'm not
+sure what MoCA is intended to be used for but I believe/hope it's the
+normal MoCA method of extending the reach of the router via existing
+coax wiring. If true, then that's a great feature and one I'd probably
+make use of if I stick with this router. The network configuration for
+this does warn, "Important: Only advanced technical users should use
+this feature."
+
+One strange message on the Verizon Ethernet port four configuration:
+
 ![Comcast Port 4 Config](/assets/images/isp-review/comcast-ethernet-port-4-config.png)
 
 I see, so associating this port to my home network will remove it from
-my home network. Hmm.... I think I'll leave it alone.
+my home network. Hmm.... I think I'll leave that alone.
 
 ### Nerd Knobs
 
@@ -216,7 +223,18 @@ Comcast's configuration is decent and honestly I'd be ok with it.
 Comcast and Verizon both offer some firewall configuration
 options. Both offer three levels of pre-defined firewallification:
 low, medium and high. Comcast also allows custom firewall
-3configuration on both IPv4 and IPv6.
+3configuration on both IPv4 and IPv6, that lists the following options:
+
+LAN-to-WAN : Allow all.
+
+WAN-to-LAN : IDS Enabled and block as per selections below.
+- Block http (TCP port 80, 443)
+- Block ICMP
+- Block Multicast
+- Block Peer-to-peer applications
+- Block IDENT (port 113)
+- Disable entire firewall
+
 
 ### Summary
 
@@ -226,7 +244,7 @@ in the table below, with rankings for each service.
 | ISP      | Download Speed | Upload Speed | Configurability | Reliability |
 |----------|:--------------:|:------------:|:---------------:|:-----------:|
 | Comcast  | 2              | 3            | 2               | 1 🏆        |
-| T-Mobile | 3              | 2            | 4 ☹️             | 2           |
+| T-Mobile | 3              | 2            | ☹️               | 2           |
 | Verizon  | 1 🏆           | 1 🏆         | 1 🏆            | 3 ☹️         |
 
 Note that T-Mobile is a very close second in the reliability
@@ -234,13 +252,15 @@ category. As I mentioned above, I've already had a day long outage
 from Verizon and as I'm writing this I've received notice to expect
 another outage tomorrow, Monday. A work day.
 
-My main concern is to have reasonably reliable service while also
+My main desire is to have reasonably reliable service while also
 having enough upstream bandwidth for two people to successfully carry
 on concurrent Zoom meetings. Despite not coming in first in any
 category, T-Mobile might just be the one I stay with as it's pretty
 reliable and does work well for Zoom. I've been using a Roku TV to
 stream 4K content over T-Mobile's service since installing it and I
-can't recall any issues.
+can't recall a single issue.
+
+
 
 ### Notes
 
