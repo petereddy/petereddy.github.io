@@ -170,7 +170,27 @@ never outright failed.
 
 #### Responsiveness
 
-https://support.apple.com/en-us/HT212313
+I also recorded responsiveness, which Apple
+[defines](https://support.apple.com/en-us/HT212313) as follows:
+
+> The Apple Network Responsiveness test reports its results using a measure called Round-trips Per Minute (RPM). The RPM is the number of sequential round-trips, or transactions, a network can do in one minute under normal working conditions.
+>
+> Low: If any device on the same network is, for example, downloading a movie or backing up photos to iCloud, the connection in some apps or services might be unreliable, like during FaceTime video calls or gaming.
+>
+> Medium: When multiple devices or apps are sharing the network, you might see momentary pauses or freezes, like during FaceTime audio or video calls.
+>
+> High: Regardless of the number of devices and apps sharing the network, apps and services should maintain good connection.
+
+Only Comcast occasionally scored responsiveness values in the *Medium*
+range however the average responsiveness scores for all three services
+were in the *Low* category:
+
+![Average Responsive](/assets/images/isp-review/average-responsiveness.png)
+
+For the curious, there's an [IETF draft document
+here](https://datatracker.ietf.org/doc/draft-cpaasch-ippm-responsiveness/)
+with more information about responsivness.
+
 
 ### Connectivity
 
@@ -231,11 +251,12 @@ appreciate to see in a router.
 | Network Objects    |         | ✅      |          |
 | WiFi 6             |         | ✅      |          |
 
-First of all, yes, nothing for T-Mobile. You're generously allowed to
-set your own SSID, password, frequency band, encryption type and
-that's it. I didn't include any of that in the table above because
-that all a given today. Worse, it's necessary to make these settings
-through their iOS or Android mobile app
+First of all, yes that's right, T-Mobile offers no
+configurability. They generously allow setting your own SSID,
+password, frequency band, encryption type and that's it. I didn't
+include any of that in the table above because that all a given
+today. Worse, it's necessary to make these settings through their iOS
+or Android mobile app
 
 This makes me sad. There *is* a web UI built in to the T-Moble device
 but it doesn't offer any configuration options to speak of, just a

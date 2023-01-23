@@ -1,0 +1,20 @@
+#!/bin/sh
+
+files=("comcast.txt" "t-mobile.txt" "verizon.txt")
+topics=("Responsiveness")
+
+mkdir output
+rm output/Responsiveness*
+
+for file in "${files[@]}"
+do
+    for topic in "${topics[@]}"
+    do
+        echo "$topic $file"
+        file_name="output/$topic-$file.txt"
+        grep $topic $file | awk '{print $3}' > "$file_name"
+#        paste -d, "$file_name" > "$csv_name"
+        
+#        grep $topic $file | awk '{print $3}' > "$topic-$file.txt"        
+    done
+done
