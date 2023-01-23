@@ -183,7 +183,7 @@ I also recorded responsiveness, which Apple
 
 Only Comcast occasionally scored responsiveness values in the *Medium*
 range however the average responsiveness scores for all three services
-were in the *Low* category:
+were in the *Low* range:
 
 ![Average Responsive](/assets/images/isp-review/average-responsiveness.png)
 
