@@ -57,3 +57,21 @@ Uplink capacity: 42.475 Mbps
 Downlink capacity: 382.499 Mbps
 Responsiveness: Low (113 RPM)
 Idle Latency: 30.750 milliseconds
+
+==== SUMMARY ====
+Uplink capacity: 19.915 Mbps
+Downlink capacity: 574.111 Mbps
+Responsiveness: Low (42 RPM)
+Idle Latency: 122.417 milliseconds
+
+==== SUMMARY ====
+Uplink capacity: 7.603 Mbps
+Downlink capacity: 551.139 Mbps
+Responsiveness: Low (27 RPM)
+Idle Latency: 148.833 milliseconds
+
+==== SUMMARY ====
+Uplink capacity: 43.921 Mbps
+Downlink capacity: 750.036 Mbps
+Responsiveness: Low (67 RPM)
+Idle Latency: 30.542 milliseconds
