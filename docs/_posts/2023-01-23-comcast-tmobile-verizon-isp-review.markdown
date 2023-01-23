@@ -42,7 +42,7 @@ Comcast support in the last 10 years, the woman on the other end of
 the line was easily the best support person I'd ever spoken to at any
 company.
 
-I guess had some things to get off my chest about Comcast.
+Ok, I guess I had some things to get off my chest about Comcast.
 
 ### T-Mobile 5G
 
