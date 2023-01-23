@@ -111,10 +111,10 @@ antenna just sitting on a small table near the window, dutifully
 facing it's big brother on the Verizon lamp post plinth across the
 street.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kF_L7onVIo8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-Watching Verizon's "easy" installation video above, I couldn't help
+Watching Verizon's "easy" installation video (below), I couldn't help
 wondering at times if it was an SNL parody skit.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kF_L7onVIo8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 I should note that the device I received from Verizon is not the same
 type of device as the one in the video. My antenna is separate and
