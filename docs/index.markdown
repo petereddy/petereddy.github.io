@@ -5,3 +5,6 @@
 layout: home
 author_profile: true
 ---
+
+<script data-goatcounter="https://petere.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
